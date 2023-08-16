@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="database-optimisation-lab_9231" />
+    <profile name="sbt 2" modules="database-optimisation-lab">
+      <option name="implicitConversions" value="true" />
+      <option name="higherKinds" value="true" />
+      <option name="existentials" value="true" />
+      <option name="macros" value="true" />
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <option name="explainTypeErrors" value="true" />
+      <parameters>
+        <parameter value="-Xcheckinit" />
+        <parameter value="-Xlint:adapted-args" />
+        <parameter value="-Xlint:constant" />
+        <parameter value="-Xlint:delayedinit-select" />
+        <parameter value="-Xlint:doc-detached" />
+        <parameter value="-Xlint:inaccessible" />
+        <parameter value="-Xlint:infer-any" />
+        <parameter value="-Xlint:missing-interpolator" />
+        <parameter value="-Xlint:nullary-unit" />
+        <parameter value="-Xlint:option-implicit" />
+        <parameter value="-Xlint:package-object-classes" />
+        <parameter value="-Xlint:poly-implicit-overload" />
+        <parameter value="-Xlint:private-shadow" />
+        <parameter value="-Xlint:stars-align" />
+        <parameter value="-Xlint:type-parameter-shadow" />
+        <parameter value="-Ywarn-dead-code" />
+        <parameter value="-Ywarn-extra-implicit" />
+        <parameter value="-Ywarn-numeric-widen" />
+        <parameter value="-Ywarn-unused:implicits" />
+        <parameter value="-Ywarn-unused:imports" />
+        <parameter value="-Ywarn-unused:locals" />
+        <parameter value="-Ywarn-unused:params" />
+        <parameter value="-Ywarn-unused:privates" />
+        <parameter value="-Ycache-plugin-class-loader:last-modified" />
+        <parameter value="-Ycache-macro-class-loader:last-modified" />
+        <parameter value="-Ywarn-macros:after" />
+        <parameter value="-P:splain:implicits:true" />
+        <parameter value="-P:splain:color:false" />
+      </parameters>
+      <plugins>
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/tryp/splain_2.13.6/0.5.8/splain_2.13.6-0.5.8.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>
