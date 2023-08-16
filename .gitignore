@@ -1,3 +1,6 @@
 target
 .bsp
 .idea
+db_backup
+db_backup.*
+.DS_Store

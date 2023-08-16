@@ -10,6 +10,10 @@ ThisBuild / useSuperShell := false
 
 addCompilerPlugin("io.tryp" % "splain" % "0.5.8" cross CrossVersion.patch)
 
+//Allows things like expanding tuples to easily understood values in for comprehensions
+// (id,appleCount) <- Future(1->2)
+//addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")
+
 scalacOptions := List(
   "-deprecation", // Emit warning and location for usages of deprecated APIs.
   "-explaintypes", // Explain type errors in more detail.
@@ -53,7 +57,20 @@ val circeVersion = "0.14.3"
 val akkaVersion = "2.6.8"
 val akkaHttpVersion = "10.2.10"
 
-libraryDependencies ++= Vector()
+mainClass in (Compile, run) := Some("com.pbyrne84.databaseoptimisationlab.datasetup.GenerateData")
+
+//fork := true
+//
+//run / javaOptions += "-Xmx16G"
+
+libraryDependencies ++= Vector(
+  "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4",
+  "org.testcontainers" % "testcontainers" % "1.18.3",
+  "org.testcontainers" % "postgresql" % "1.18.3",
+  "org.flywaydb" % "flyway-core" % "9.21.1",
+  "org.postgresql" % "postgresql" % "42.6.0",
+  "org.playframework.anorm" %% "anorm" % "2.7.0" // usually we would use something a bit more flashy
+)
 
 Test / test := (Test / test)
   .dependsOn(Compile / scalafmtCheck)
